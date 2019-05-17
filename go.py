@@ -42,15 +42,17 @@ for stop in orgstops:
 	print('{}, {}, {}, {}, {}'.format(newStation.name, newStation.primeid, newStation.orgid, newStation.lat, newStation.lon))
 
 def getLine(number):
-    query_stops_by_bus = '{routes(name: "' + str(number) + '" transportModes: BUS) \{shortName longName stops \{name gtfsId \}\}\}'
+    query_stops_by_bus = '{routes(name: "' + str(number) + '" transportModes: BUS) \{shortName longName patterns \{code directionId name stops \{name gtfsId \}\}\}\}'
     result = run_query(query_stops_by_bus)
-    route = result['data']['routes'][0]['stops']
+    orgRouteName = result['data']['routes'][0]['patterns'][0]['name']
+    route = result['data']['routes'][0]['patterns'][0]['stops']
     lineno = 1
     linetext = ""
     for stop in route:
         lineno *= nameToPrime[stop['name']]
         linetext += stop['name'] + "(" + str(nameToPrime[stop['name']]) +") -> "
     print('\n')
+    print("Lame original name that isn't helpful: {}".format(orgRouteName))
     print("Bus line: {}".format(lineno))
     print('\n')
     print (linetext)
