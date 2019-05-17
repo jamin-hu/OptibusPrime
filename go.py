@@ -7,6 +7,11 @@ with open('100kprimes.txt', 'r') as primefile:
 	for line in primefile:
 		primes.append(int(line))
 
+emojilut = []
+with open('emojilut.txt', 'r') as emojifile:
+	for line in emojifile:
+		emojilut.append(line[0])
+
 with open("stops.txt", 'r') as stops:
 	data = json.load(stops)
 	orgstops = data['data']['stops']
