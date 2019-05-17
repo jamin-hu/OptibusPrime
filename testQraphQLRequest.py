@@ -11,6 +11,8 @@ https://gist.github.com/gbaman/b3137e18c739e0cf98539bf4ec4366ad
 """
 
 import requests
+import json
+from pprint import pprint
 
 def run_query(query):
     headers = {'Content-type': 'application/json'}
@@ -20,7 +22,23 @@ def run_query(query):
     if r.status_code == 200:
         return r.json()
     else:
-        raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
+        raise Exception("Query failed to run by returning code of {}. {}".format(r.status_code, query))
+
+
+def address_search_to_lat_lon(text):    
+    r = requests.get(
+    'https://api.digitransit.fi/geocoding/v1/search',
+    params={'text': text,
+            'size': 1},
+    )
+    
+    if r.status_code == 200:
+        lon, lat = r.json()['features'][0]['geometry']['coordinates']
+        print(text, "-> lat, lon: ", lat, lon)
+        return lat, lon
+    else:
+        raise Exception("Query failed to run by address searching of {}. {}".format(r.status_code, text))
+
 
 
 query_stops_by_bus = """
@@ -49,11 +67,15 @@ query_all_stops_of_a_bus = """
 """
 
 
-query_suggest_routes = """
+query_suggest_routes_p1 = """
 {
   plan(
-    fromPlace: "Kamppi, Helsinki::60.168992,24.932366",
-    toPlace: "Pisa, Espoo::60.175294,24.684855",
+"""
+query_suggest_routes_p2 = "    from: {{lat: {}, lon: {}}} \n"
+query_suggest_routes_p3 = "    to: {{lat: {}, lon: {}}} \n"
+
+query_suggest_routes_p4 = """
+    transportModes: [{mode:WALK}, {mode: BUS}, {mode: RAIL}],
   ) {
     itineraries{
       walkDistance,
@@ -91,9 +113,39 @@ query_suggest_routes = """
 }
 """
 
-def genSuggestedRoutes(from_station_name, to_station_name):
-    pass
 
-#print(run_query(query_stops_by_bus))
-#print(run_query(query_all_stops_of_a_bus))
-print(run_query(query_suggest_routes))
+
+def gen_suggested_routes(from_station_name, to_station_name):
+    from_lat, from_lon = address_search_to_lat_lon(from_station_name)
+    to_lat, to_lon = address_search_to_lat_lon(to_station_name)
+    
+#    query_suggest_routes = query_suggest_routes_p1 + \
+#                           "    from: {lat: 60.170203, lon: 24.941074} \n" + \
+#                           "    to: {lat: 60.185052, lon: 24.825671} \n" + \
+#                           query_suggest_routes_p4
+                           
+    query_suggest_routes = query_suggest_routes_p1 + \
+                           query_suggest_routes_p2.format(from_lat, from_lon) + \
+                           query_suggest_routes_p3.format(to_lat, to_lon) + \
+                           query_suggest_routes_p4
+    
+#    print(">>>")
+#    print(query_suggest_routes)
+#    print("<<<")
+    
+    ret = run_query(query_suggest_routes)
+    return ret
+
+itns = gen_suggested_routes('city center', 'aalto university')
+#pprint(itns)
+for i, itn in enumerate(itns['data']['plan']['itineraries']):
+    print("itinerary: ", i)
+    for item in itn['legs']:
+        #print(item['mode'])
+        if item['mode'] != 'WALK':
+            # get the route -> patterns -> code
+            pass
+
+#print(address_search_to_lat_lon('city center'))
+#print(json.dumps(json.loads(addressSearch('kamppi')), \
+#                 indent=4, sort_keys=True) )
