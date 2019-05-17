@@ -1,5 +1,4 @@
 import json
-import random
 
 primes = []
 
@@ -41,16 +40,5 @@ def makeLine(length):
 	print("Line number: {}".format(lineno))
 	print("Route:")
 	print(linetext)
-
-def emoji():
-	emojiBase = {}
-	with open("emoji-data.txt", 'r') as emojifile:
-		counter = 0
-		for line in emojifile:
-			splitLine = line.split(';')
-			emojiBase[counter] = splitLine[0].trim
-			print('{}, {}'.format(counter, emojiBase[counter]))
-			counter = counter + 1
-
 
 
