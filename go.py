@@ -1,5 +1,6 @@
 import json
 import random
+import requests
 
 primes = []
 
@@ -16,6 +17,22 @@ class Station():
 		self.primeid = primeid
 		self.name = name
 		self.orgid = orgid
+
+def run_query(query):
+    headers = {'Content-type': 'application/json'}
+    
+    r = requests.post("https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql", 
+                  json={'query': query}, headers=headers)
+    if r.status_code == 200:
+        return r.json()
+    else:
+        raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
+
+
+def getRoute(number):
+    query_stops_by_bus = '{routes(name: "' + str(number) + '" transportModes: BUS) \{shortName longName stops \{name gtfsId \}\}\}'
+    route = run_query(query_stops_by_bus)
+    return route['data']['routes'][0]['stops']
 
 stops=[]
 for stop in orgstops:
