@@ -12,16 +12,22 @@ with open("stops.txt", 'r') as stops:
 	orgstops = data['data']['stops']
 
 class Station():
-	def __init__(self, primeid, name, orgid):
+	def __init__(self, primeid, name, orgid, lat, lon):
 		self.primeid = primeid
 		self.name = name
 		self.orgid = orgid
+		self.lat = lat
+		self.lon = lon
 
-stops=[]
+hslidToStopObject={}
+nameToPrime={}
 for stop in orgstops:
-	newStation = Station(primes.pop(0), stop['name'], stop['gtfsId']) 
-	stops.append(newStation)
-	print('{}, {}, {}'.format(newStation.name, newStation.primeid, newStation.orgid))
+	if stop['name'] not in nameToPrime:
+		nameToPrime[stop['name']] = primes.pop(0)
+		
+	newStation = Station(nameToPrime[stop['name']],stop['name'], stop['gtfsId'], stop['lat'], stop['lon']) 
+	hslidToStopObject[newStation.orgid] = newStation
+	print('{}, {}, {}, {}, {}'.format(newStation.name, newStation.primeid, newStation.orgid, newStation.lat, newStation.lon))
 
 
 def makeLine(length):
