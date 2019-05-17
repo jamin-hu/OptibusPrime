@@ -1,6 +1,5 @@
 import json
 import random
-import requests
 
 primes = []
 
@@ -13,32 +12,22 @@ with open("stops.txt", 'r') as stops:
 	orgstops = data['data']['stops']
 
 class Station():
-	def __init__(self, primeid, name, orgid):
+	def __init__(self, primeid, name, orgid, lat, lon):
 		self.primeid = primeid
 		self.name = name
 		self.orgid = orgid
+		self.lat = lat
+		self.lon = lon
 
-def run_query(query):
-    headers = {'Content-type': 'application/json'}
-    
-    r = requests.post("https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql", 
-                  json={'query': query}, headers=headers)
-    if r.status_code == 200:
-        return r.json()
-    else:
-        raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
-
-
-def getRoute(number):
-    query_stops_by_bus = '{routes(name: "' + str(number) + '" transportModes: BUS) \{shortName longName stops \{name gtfsId \}\}\}'
-    route = run_query(query_stops_by_bus)
-    return route['data']['routes'][0]['stops']
-
-stops=[]
+hslidToStopObject={}
+nameToPrime={}
 for stop in orgstops:
-	newStation = Station(primes.pop(0), stop['name'], stop['gtfsId']) 
-	stops.append(newStation)
-	print('{}, {}, {}'.format(newStation.name, newStation.primeid, newStation.orgid))
+	if stop['name'] not in nameToPrime:
+		nameToPrime[stop['name']] = primes.pop(0)
+		
+	newStation = Station(nameToPrime[stop['name']],stop['name'], stop['gtfsId'], stop['lat'], stop['lon']) 
+	hslidToStopObject[newStation.orgid] = newStation
+	print('{}, {}, {}, {}, {}'.format(newStation.name, newStation.primeid, newStation.orgid, newStation.lat, newStation.lon))
 
 
 def makeLine(length):

@@ -49,8 +49,51 @@ query_all_stops_of_a_bus = """
 """
 
 
+query_suggest_routes = """
+{
+  plan(
+    fromPlace: "Kamppi, Helsinki::60.168992,24.932366",
+    toPlace: "Pisa, Espoo::60.175294,24.684855",
+  ) {
+    itineraries{
+      walkDistance,
+      duration,
+      legs {
+        mode
+        startTime
+        endTime
+        from {
+          lat
+          lon
+          name
+          stop {
+            code
+            name
+          }
+        },
+        to {
+          lat
+          lon
+          name
+        },
+        agency {
+          gtfsId
+	  name
+        },
+        distance
+        legGeometry {
+          length
+          points
+        }
+      }
+    }
+  }
+}
+"""
+
 def genSuggestedRoutes(from_station_name, to_station_name):
     pass
 
-print(run_query(query_stops_by_bus))
-print(run_query(query_all_stops_of_a_bus))
+#print(run_query(query_stops_by_bus))
+#print(run_query(query_all_stops_of_a_bus))
+print(run_query(query_suggest_routes))
