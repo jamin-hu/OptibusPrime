@@ -11,6 +11,7 @@ with open("stops.txt", 'r') as stops:
 	data = json.load(stops)
 	orgstops = data['data']['stops']
 
+
 class Station():
 	def __init__(self, primeid, name, orgid, lat, lon):
 		self.primeid = primeid
@@ -40,3 +41,16 @@ def makeLine(length):
 	print("Line number: {}".format(lineno))
 	print("Route:")
 	print(linetext)
+
+def emoji():
+	emojiBase = {}
+	with open("emoji-data.txt", 'r') as emojifile:
+		counter = 0
+		for line in emojifile:
+			splitLine = line.split(';')
+			emojiBase[counter] = splitLine[0].trim
+			print('{}, {}'.format(counter, emojiBase[counter]))
+			counter = counter + 1
+
+
+
