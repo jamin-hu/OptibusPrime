@@ -4,11 +4,24 @@
 Created on Fri May 17 21:35:20 2019
 
 @author: erich
+
+ref:
+https://stackoverflow.com/questions/11322430/how-to-send-post-request
+https://gist.github.com/gbaman/b3137e18c739e0cf98539bf4ec4366ad
 """
 
 import requests
 
-headers = {'Content-type': 'application/json'}
+def run_query(query):
+    headers = {'Content-type': 'application/json'}
+    
+    r = requests.post("https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql", 
+                  json={'query': query}, headers=headers)
+    if r.status_code == 200:
+        return r.json()
+    else:
+        raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
+
 
 query_stops_by_bus = """
 {
@@ -24,9 +37,20 @@ query_stops_by_bus = """
 }
 """
 
-r = requests.post("https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql", 
-                  json={'query': query_stops_by_bus}, headers=headers)
+query_all_stops_of_a_bus = """
+{
+  pattern(id: "HSL:2550:0:01") {
+    name
+    stops {
+      name
+    }
+  }
+}
+"""
 
-print(r.status_code, r.reason)
-print(r.json())
-#print(r.text[:300] + '...')
+
+def genSuggestedRoutes(from_station_name, to_station_name):
+    pass
+
+print(run_query(query_stops_by_bus))
+print(run_query(query_all_stops_of_a_bus))
