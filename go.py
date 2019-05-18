@@ -67,6 +67,18 @@ query_suggest_routes_p4 = """
           patterns {
             code
           }
+        },
+        from {
+          stop{
+            name
+            gtfsId
+          }
+        },
+        to {
+          stop{
+            name
+            gtfsId
+          }
         }
       }
     }
@@ -95,7 +107,7 @@ def gen_suggested_routes_in_codes(from_station_name, to_station_name):
     
     for i, itn in enumerate(itns['data']['plan']['itineraries']):
         #print("itinerary: ", i)
-        #print(itn)
+        # print(itn)
         itn_pattern_codes = []
         for item in itn['legs']:
             #print(item)
@@ -103,10 +115,11 @@ def gen_suggested_routes_in_codes(from_station_name, to_station_name):
                 # get the route -> patterns -> code
                 pattern_codes = [ d['code']for d in item['route']['patterns'] ]
                 #print(pattern_codes)
+                print(item)
                 itn_pattern_codes.append(pattern_codes)
         itns_pattern_codes.append(itn_pattern_codes)
     
-    return itns_pattern_codes
+    return itns_pattern_codes[0][0]
 
 
 hslidToStopObject={}
@@ -157,6 +170,7 @@ def getl(code):
 def planRoute(from_station_name, to_station_name):
 	route = gen_suggested_routes_in_codes(from_station_name, to_station_name)
 	for branch in route:
+		print('\n\n\n')
 		line = branch[0][0]
 		print(line)
 
@@ -176,4 +190,4 @@ def makeLine(length):
 #     print(f"itinerary [{i}]: {result[0][0]}")
 #     getl(result[0][0])
 
-planRoute('city center', 'aalto university')
+planRoute('city center', 'Vanhan-Mankkaan tie 35')
