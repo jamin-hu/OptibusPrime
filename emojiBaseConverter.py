@@ -20,4 +20,7 @@ def convertToBase(number, base):
 emoji()
 
 #emojiList = []
-print(convertToBase(32771, len(emojiBase)))
+print("aalto university: " + convertToBase(32771, len(emojiBase)))
+print("senate square: " + convertToBase(1471, len(emojiBase)))
+print("teekkarikyla: " + convertToBase(167, len(emojiBase)))
+print("kamppi: " + convertToBase(23677, len(emojiBase)))
