@@ -188,7 +188,7 @@ def getLine(number):
 def getl(code):
     query_stops_by_bus = '{pattern(id: "' + str(code) + '" ) \{name stops \{name gtfsId \}\}\}'
     result = run_query(query_stops_by_bus)
-    print (result)
+    # print (result)
     orgRouteName = result['data']['pattern']['name']
     route = result['data']['pattern']['stops']
     lineno = 1
@@ -196,18 +196,18 @@ def getl(code):
     for stop in route:
         lineno *= nameToPrime[stop['name']]
         linetext += stop['name'] + "(" + str(nameToPrime[stop['name']]) +") -> "
-    print('\n')
-    print("Lame original name that isn't helpful: {}".format(orgRouteName))
-    print("Bus line: {}".format(lineno))
-    print('\n')
-    print (linetext)
+    return lineno
 
 def planRoute(from_station_name, to_station_name):
-	route = gen_suggested_routes_in_codes(from_station_name, to_station_name)
-	for branch in route:
-		print('\n\n\n')
-		line = branch[0][0]
-		print(line)
+	route = gen_suggested_routes_in_codes(from_station_name, to_station_name)[0]
+	for step in route:
+		if step['mode'] == 'WALK':
+			continue
+		print('\n')
+		busline = getl(step['1st_route_pattern_id'])
+		print (f"take the {step['mode']} {busline}")
+		print(f"to {nameToPrime[step['to']]} aka {step['to']}")
+		# print (step)
 
 def makeLine(length):
 	lineno = 1
@@ -225,7 +225,9 @@ def makeLine(length):
 #     print(f"itinerary [{i}]: {result[0][0]}")
 #     getl(result[0][0])
 
-planRoute('city center', 'Vanhan-Mankkaan tie 35')
+# planRoute('city center', 'Vanhan-Mankkaan tie 35')
+planRoute('city center', 'heinjoenpolku 2')
+# route = gen_suggested_routes_in_codes('city center', 'Vanhan-Mankkaan tie 35')
 
 #print("550 " + str(getLine(550)))
 #print(convertToBase(51759296941079414333315711604049960300290821256010136817594556243115323785701046136602111554394459108531449692330382516858938228969514590993, len(emojiBase)))
