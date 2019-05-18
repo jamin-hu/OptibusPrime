@@ -1,4 +1,8 @@
 import random
+import numpy as np
+import matplotlib.pyplot as plt
+
+
 
 def multiplyList(myList):
     result = 1
@@ -13,22 +17,60 @@ with open('100kprimes.txt', 'r') as primefile:
 		primes.append(int(line))
 
 
-def calcRandRouteProd(totalNumOfStops, numOfStops):
+def calcRandAvgRouteProd(totalNumOfStops, numOfStops):
 
     totalStopPrimes = []
 
-    stopPrimes = []
-
-
     for i in range(totalNumOfStops):
         totalStopPrimes.append(primes[i])
+    print("Total primes = ")
     print(totalStopPrimes)
 
-    stopPrimes = random.sample(totalStopPrimes, k = numOfStops)
-    print(stopPrimes)
+    totalLength = 0
 
-    routePrime = multiplyList(stopPrimes)
-    print(routePrime)
-    print(len(str(routePrime)))
+    for h in range(10):
+        stopPrimes = []
+        stopPrimes = random.sample(totalStopPrimes, k = numOfStops)
 
-calcRandRouteProd(1000, 30)
+        print("Random sample of StopPrimes = ")
+        print(stopPrimes)
+        routePrime = multiplyList(stopPrimes)
+        print("RoutePrime = " + str(routePrime))
+        routePrimeLength = len(str(routePrime))
+        print("RoutePrime Length = " + str(routePrimeLength))
+        totalLength = totalLength + routePrimeLength
+    averageLength = totalLength/10
+    print(averageLength)
+    return averageLength
+
+#averageLength = calcRandAvgRouteProd(100, 10)
+#print("Average Length = " + str(averageLength))
+
+def getPossibilities(maxNumOfTotalStops):
+
+    possibilityMatrix = np.zeros(shape=(maxNumOfTotalStops,maxNumOfTotalStops))
+    for i in range(maxNumOfTotalStops):
+        for j in range(maxNumOfTotalStops):
+            if i>j:
+                print(i)
+                print(j)
+                RandAvgLength = calcRandAvgRouteProd(i, j)
+                possibilityMatrix[i, j] = RandAvgLength
+
+    return possibilityMatrix
+
+possibilityMatrix = getPossibilities(100)
+
+print(possibilityMatrix)
+
+plt.xlabel('AverageRouteLength in Stops')
+plt.ylabel('TotalNumOfStops in City')
+
+plt.imshow(possibilityMatrix, cmap='hot')
+plt.show()
+# testMatrix = np.zeros((5,5))
+# testMatrix[1, 2] = 1
+#
+# plt.figure("testMatrix[1, 2]")
+# plt.imshow(testMatrix)
+# plt.show()
