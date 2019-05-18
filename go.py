@@ -51,7 +51,7 @@ def run_query(query):
     if r.status_code == 200:
         return r.json()
     else:
-        raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
+        raise Exception("Query failed to run by returning code of {}. {}".format(r.status_code, query))
 
 def address_search_to_lat_lon(text):    
     r = requests.get(
@@ -75,28 +75,31 @@ query_suggest_routes_p2 = "    from: {{lat: {}, lon: {}}} \n"
 query_suggest_routes_p3 = "    to: {{lat: {}, lon: {}}} \n"
 
 query_suggest_routes_p4 = """
-
   ) {
     itineraries{
       legs {
         mode
+        
+        from {
+          name
+          stop{
+            gtfsId
+          }
+        },
+          
         route {
           patterns {
             code
           }
         },
-        from {
-          stop{
-            name
-            gtfsId
-          }
-        },
+          
         to {
+          name
           stop{
-            name
             gtfsId
           }
         }
+          
       }
     }
   }
@@ -106,37 +109,48 @@ query_suggest_routes_p4 = """
 def gen_suggested_routes_in_codes(from_station_name, to_station_name):
     from_lat, from_lon = address_search_to_lat_lon(from_station_name)
     to_lat, to_lon = address_search_to_lat_lon(to_station_name)
-    
-#    query_suggest_routes = query_suggest_routes_p1 + \
-#                           "    from: {lat: 60.170203, lon: 24.941074} \n" + \
-#                           "    to: {lat: 60.185052, lon: 24.825671} \n" + \
-#                           query_suggest_routes_p4
                            
     query_suggest_routes = query_suggest_routes_p1 + \
                            query_suggest_routes_p2.format(from_lat, from_lon) + \
                            query_suggest_routes_p3.format(to_lat, to_lon) + \
                            query_suggest_routes_p4
     
+    itns = []
+    """    
+    itns = [
+            [[{mode: WALK}, {from:}, {to}], 
+             [{mode: BUS}, {from:}, {to:}], 
+             [{mode: WALK}, {from:}, {to:}]
+            ], # itn
+             
+            [...], # itn
+            ...,
+           ]
+    """
     
-    itns_pattern_codes = []
+    query_results = run_query(query_suggest_routes)
     
-    itns = run_query(query_suggest_routes)
-    
-    for i, itn in enumerate(itns['data']['plan']['itineraries']):
-        #print("itinerary: ", i)
-        # print(itn)
-        itn_pattern_codes = []
-        for item in itn['legs']:
-            #print(item)
+    for i, query_result in enumerate(query_results['data']['plan']['itineraries']):
+        itn = []
+        #itn_pattern_codes = []
+        for item in query_result['legs']:
+            leg = {}
+            leg['mode'] = item['mode']
+            leg['from'] = item['from']['name']
+            leg['to'] = item['to']['name']
+            
+            
             if item['mode'] != 'WALK':
-                # get the route -> patterns -> code
-                pattern_codes = [ d['code']for d in item['route']['patterns'] ]
-                #print(pattern_codes)
-                print(item)
-                itn_pattern_codes.append(pattern_codes)
-        itns_pattern_codes.append(itn_pattern_codes)
+                leg['from_stop_id'] = item['from']['stop']['gtfsId']
+                leg['to_stop_id'] = item['to']['stop']['gtfsId']
+                leg['1st_route_pattern_id'] = item['route']['patterns'][0]['code']
+                leg['all route_pattern_ids'] = [ d['code']for d in item['route']['patterns'] ]
+                
+            
+            itn.append(leg)
+        itns.append(itn)
     
-    return itns_pattern_codes[0][0]
+    return itns
 
 
 hslidToStopObject={}
@@ -174,7 +188,7 @@ def getLine(number):
 def getl(code):
     query_stops_by_bus = '{pattern(id: "' + str(code) + '" ) \{name stops \{name gtfsId \}\}\}'
     result = run_query(query_stops_by_bus)
-    print (result)
+    # print (result)
     orgRouteName = result['data']['pattern']['name']
     route = result['data']['pattern']['stops']
     lineno = 1
@@ -182,18 +196,18 @@ def getl(code):
     for stop in route:
         lineno *= nameToPrime[stop['name']]
         linetext += stop['name'] + "(" + str(nameToPrime[stop['name']]) +") -> "
-    print('\n')
-    print("Lame original name that isn't helpful: {}".format(orgRouteName))
-    print("Bus line: {}".format(lineno))
-    print('\n')
-    print (linetext)
+    return lineno
 
 def planRoute(from_station_name, to_station_name):
-	route = gen_suggested_routes_in_codes(from_station_name, to_station_name)
-	for branch in route:
-		print('\n\n\n')
-		line = branch[0][0]
-		print(line)
+	route = gen_suggested_routes_in_codes(from_station_name, to_station_name)[0]
+	for step in route:
+		if step['mode'] == 'WALK':
+			continue
+		print('\n')
+		busline = getl(step['1st_route_pattern_id'])
+		print (f"take the {step['mode']} {busline}")
+		print(f"to {nameToPrime[step['to']]} aka {step['to']}")
+		# print (step)
 
 def makeLine(length):
 	lineno = 1
@@ -211,4 +225,12 @@ def makeLine(length):
 #     print(f"itinerary [{i}]: {result[0][0]}")
 #     getl(result[0][0])
 
-planRoute('city center', 'Vanhan-Mankkaan tie 35')
+# planRoute('city center', 'Vanhan-Mankkaan tie 35')
+planRoute('city center', 'heinjoenpolku 2')
+# route = gen_suggested_routes_in_codes('city center', 'Vanhan-Mankkaan tie 35')
+
+#print("550 " + str(getLine(550)))
+#print(convertToBase(51759296941079414333315711604049960300290821256010136817594556243115323785701046136602111554394459108531449692330382516858938228969514590993, len(emojiBase)))
+#print("111" + str(getLine(111)))
+#print(convertToBase(40402479324809814417940006512152773163674662445655354921061559291138206891449781840193296159270221602850595043902667142508140557802807074797133339127220727495353426164145036373, len(emojiBase)))
+
