@@ -51,7 +51,7 @@ def run_query(query):
     if r.status_code == 200:
         return r.json()
     else:
-        raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
+        raise Exception("Query failed to run by returning code of {}. {}".format(r.status_code, query))
 
 def address_search_to_lat_lon(text):    
     r = requests.get(
@@ -75,28 +75,31 @@ query_suggest_routes_p2 = "    from: {{lat: {}, lon: {}}} \n"
 query_suggest_routes_p3 = "    to: {{lat: {}, lon: {}}} \n"
 
 query_suggest_routes_p4 = """
-
   ) {
     itineraries{
       legs {
         mode
+        
+        from {
+          name
+          stop{
+            gtfsId
+          }
+        },
+          
         route {
           patterns {
             code
           }
         },
-        from {
-          stop{
-            name
-            gtfsId
-          }
-        },
+          
         to {
+          name
           stop{
-            name
             gtfsId
           }
         }
+          
       }
     }
   }
@@ -119,24 +122,46 @@ def gen_suggested_routes_in_codes(from_station_name, to_station_name):
     
     
     itns_pattern_codes = []
+    itns = []
+    """    
+    itns = [
+            [[{mode: WALK}, {from:}, {to}], 
+             [{mode: BUS}, {from:}, {to:}], 
+             [{mode: WALK}, {from:}, {to:}]
+            ], # itn
+             
+            [...], # itn
+            ...,
+           ]
+    """
     
-    itns = run_query(query_suggest_routes)
+    query_results = run_query(query_suggest_routes)
     
-    for i, itn in enumerate(itns['data']['plan']['itineraries']):
-        #print("itinerary: ", i)
-        # print(itn)
-        itn_pattern_codes = []
-        for item in itn['legs']:
-            #print(item)
+    for i, query_result in enumerate(query_results['data']['plan']['itineraries']):
+        itn = []
+        #itn_pattern_codes = []
+        for item in query_result['legs']:
+            leg = {}
+            leg['mode'] = item['mode']
+            leg['from'] = item['from']['name']
+            leg['to'] = item['to']['name']
+            
+            
             if item['mode'] != 'WALK':
+                leg['from_stop_id'] = item['from']['stop']['gtfsId']
+                leg['to_stop_id'] = item['to']['stop']['gtfsId']
+                leg['1st_route_pattern_id'] = item['route']['patterns'][0]['code']
+                leg['all route_pattern_ids'] = [ d['code']for d in item['route']['patterns'] ]
+                
                 # get the route -> patterns -> code
-                pattern_codes = [ d['code']for d in item['route']['patterns'] ]
-                #print(pattern_codes)
-                print(item)
-                itn_pattern_codes.append(pattern_codes)
-        itns_pattern_codes.append(itn_pattern_codes)
+                #pattern_codes = [ d['code']for d in item['route']['patterns'] ]
+            
+            itn.append(leg)
+        itns.append(itn)
+               # itn_pattern_codes.append(pattern_codes)
+        #itns_pattern_codes.append(itn_pattern_codes)
     
-    return itns_pattern_codes[0][0]
+    return itns
 
 
 hslidToStopObject={}
