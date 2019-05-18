@@ -43,17 +43,24 @@ def convertToBase(number, base=1000):
 		return convertToBase(number//base, base) + emojiBase[number%base]
 
 def deemoji(emojistring):
- result = 0
- for emoji in emojiBase:
-  if emojistring.find(emoji) == 0:
-   emojistring = emojistring[len(emoji):]
-   result *= 1000
-   result += emojiBase.index(emoji)
+	result = 0
+
+	while True:
+		print('begin for loop')
+		for emoji in emojiBase:
+			if emojistring.find(emoji) == 0:
+				emojistring = emojistring[len(emoji):]
+				result *= 1000
+				result += emojiBase.index(emoji)
+				print(emojistring)
+				break
+		if len(emojistring) == 0: break
+		
  
 #    for emoji in emojistring:
 #  result *= 1000
 #  result += emojiBase.index(emoji)
- return result
+	return result
 
 def sumemoji(one, two):
 	return convertToBase(deemoji(one) + deemoji(two))
