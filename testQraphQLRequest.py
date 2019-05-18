@@ -75,37 +75,15 @@ query_suggest_routes_p2 = "    from: {{lat: {}, lon: {}}} \n"
 query_suggest_routes_p3 = "    to: {{lat: {}, lon: {}}} \n"
 
 query_suggest_routes_p4 = """
-    transportModes: [{mode:WALK}, {mode: BUS}, {mode: RAIL}],
+
   ) {
     itineraries{
-      walkDistance,
-      duration,
       legs {
         mode
-        startTime
-        endTime
-        from {
-          lat
-          lon
-          name
-          stop {
+        route {
+          patterns {
             code
-            name
           }
-        },
-        to {
-          lat
-          lon
-          name
-        },
-        agency {
-          gtfsId
-	  name
-        },
-        distance
-        legGeometry {
-          length
-          points
         }
       }
     }
@@ -115,7 +93,7 @@ query_suggest_routes_p4 = """
 
 
 
-def gen_suggested_routes(from_station_name, to_station_name):
+def gen_suggested_routes_in_codes(from_station_name, to_station_name):
     from_lat, from_lon = address_search_to_lat_lon(from_station_name)
     to_lat, to_lon = address_search_to_lat_lon(to_station_name)
     
@@ -129,22 +107,32 @@ def gen_suggested_routes(from_station_name, to_station_name):
                            query_suggest_routes_p3.format(to_lat, to_lon) + \
                            query_suggest_routes_p4
     
-#    print(">>>")
-#    print(query_suggest_routes)
-#    print("<<<")
     
-    ret = run_query(query_suggest_routes)
-    return ret
+    itns_pattern_codes = []
+    
+    itns = run_query(query_suggest_routes)
+    
+    for i, itn in enumerate(itns['data']['plan']['itineraries']):
+        #print("itinerary: ", i)
+        #print(itn)
+        itn_pattern_codes = []
+        for item in itn['legs']:
+            #print(item)
+            if item['mode'] != 'WALK':
+                # get the route -> patterns -> code
+                pattern_codes = [ d['code']for d in item['route']['patterns'] ]
+                #print(pattern_codes)
+                itn_pattern_codes.append(pattern_codes)
+        itns_pattern_codes.append(itn_pattern_codes)
+    
+    return itns_pattern_codes
 
-itns = gen_suggested_routes('city center', 'aalto university')
+
+results = gen_suggested_routes_in_codes('city center', 'aalto university')
+for i, result in enumerate(results):
+    print(f"itinerary [{i}]: {result}")
 #pprint(itns)
-for i, itn in enumerate(itns['data']['plan']['itineraries']):
-    print("itinerary: ", i)
-    for item in itn['legs']:
-        #print(item['mode'])
-        if item['mode'] != 'WALK':
-            # get the route -> patterns -> code
-            pass
+
 
 #print(address_search_to_lat_lon('city center'))
 #print(json.dumps(json.loads(addressSearch('kamppi')), \
