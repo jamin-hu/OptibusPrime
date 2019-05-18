@@ -1,5 +1,6 @@
 import json
 import random, requests
+from pprint import pprint
 
 primes = []
 
@@ -35,6 +36,78 @@ def run_query(query):
     else:
         raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
 
+def address_search_to_lat_lon(text):    
+    r = requests.get(
+    'https://api.digitransit.fi/geocoding/v1/search',
+    params={'text': text,
+            'size': 1},
+    )
+    
+    if r.status_code == 200:
+        lon, lat = r.json()['features'][0]['geometry']['coordinates']
+        print(text, "-> lat, lon: ", lat, lon)
+        return lat, lon
+    else:
+        raise Exception("Query failed to run by address searching of {}. {}".format(r.status_code, text))
+
+query_suggest_routes_p1 = """
+{
+  plan(
+"""
+query_suggest_routes_p2 = "    from: {{lat: {}, lon: {}}} \n"
+query_suggest_routes_p3 = "    to: {{lat: {}, lon: {}}} \n"
+
+query_suggest_routes_p4 = """
+
+  ) {
+    itineraries{
+      legs {
+        mode
+        route {
+          patterns {
+            code
+          }
+        }
+      }
+    }
+  }
+}
+"""
+
+def gen_suggested_routes_in_codes(from_station_name, to_station_name):
+    from_lat, from_lon = address_search_to_lat_lon(from_station_name)
+    to_lat, to_lon = address_search_to_lat_lon(to_station_name)
+    
+#    query_suggest_routes = query_suggest_routes_p1 + \
+#                           "    from: {lat: 60.170203, lon: 24.941074} \n" + \
+#                           "    to: {lat: 60.185052, lon: 24.825671} \n" + \
+#                           query_suggest_routes_p4
+                           
+    query_suggest_routes = query_suggest_routes_p1 + \
+                           query_suggest_routes_p2.format(from_lat, from_lon) + \
+                           query_suggest_routes_p3.format(to_lat, to_lon) + \
+                           query_suggest_routes_p4
+    
+    
+    itns_pattern_codes = []
+    
+    itns = run_query(query_suggest_routes)
+    
+    for i, itn in enumerate(itns['data']['plan']['itineraries']):
+        #print("itinerary: ", i)
+        #print(itn)
+        itn_pattern_codes = []
+        for item in itn['legs']:
+            #print(item)
+            if item['mode'] != 'WALK':
+                # get the route -> patterns -> code
+                pattern_codes = [ d['code']for d in item['route']['patterns'] ]
+                #print(pattern_codes)
+                itn_pattern_codes.append(pattern_codes)
+        itns_pattern_codes.append(itn_pattern_codes)
+    
+    return itns_pattern_codes
+
 
 hslidToStopObject={}
 nameToPrime={}
@@ -45,6 +118,8 @@ for stop in orgstops:
 	newStation = Station(nameToPrime[stop['name']],stop['name'], stop['gtfsId'], stop['lat'], stop['lon']) 
 	hslidToStopObject[newStation.orgid] = newStation
 	print('{}, {}, {}, {}, {}'.format(newStation.name, newStation.primeid, newStation.orgid, newStation.lat, newStation.lon))
+
+print('\nAll stops created.\n')
 
 def getLine(number):
     query_stops_by_bus = '{routes(name: "' + str(number) + '" ) \{shortName longName patterns \{code directionId name stops \{name gtfsId \}\}\}\}'
@@ -63,7 +138,7 @@ def getLine(number):
     print (linetext)
 
 def getl(code):
-    query_stops_by_bus = '{(id: "' + str(code) + '" ) \{name stops \{name gtfsId \}\}\}'
+    query_stops_by_bus = '{pattern(id: "' + str(code) + '" ) \{name stops \{name gtfsId \}\}\}'
     result = run_query(query_stops_by_bus)
     print (result)
     orgRouteName = result['data']['pattern']['name']
@@ -79,6 +154,12 @@ def getl(code):
     print('\n')
     print (linetext)
 
+def planRoute(from_station_name, to_station_name):
+	route = gen_suggested_routes_in_codes(from_station_name, to_station_name)
+	for branch in route:
+		line = branch[0][0]
+		print(line)
+
 def makeLine(length):
 	lineno = 1
 	linetext = ""
@@ -89,3 +170,10 @@ def makeLine(length):
 	print("Line number: {}".format(lineno))
 	print("Route:")
 	print(linetext)
+
+# results = gen_suggested_routes_in_codes('city center', 'aalto university')
+# for i, result in enumerate(results):
+#     print(f"itinerary [{i}]: {result[0][0]}")
+#     getl(result[0][0])
+
+planRoute('city center', 'aalto university')
