@@ -109,19 +109,12 @@ query_suggest_routes_p4 = """
 def gen_suggested_routes_in_codes(from_station_name, to_station_name):
     from_lat, from_lon = address_search_to_lat_lon(from_station_name)
     to_lat, to_lon = address_search_to_lat_lon(to_station_name)
-    
-#    query_suggest_routes = query_suggest_routes_p1 + \
-#                           "    from: {lat: 60.170203, lon: 24.941074} \n" + \
-#                           "    to: {lat: 60.185052, lon: 24.825671} \n" + \
-#                           query_suggest_routes_p4
                            
     query_suggest_routes = query_suggest_routes_p1 + \
                            query_suggest_routes_p2.format(from_lat, from_lon) + \
                            query_suggest_routes_p3.format(to_lat, to_lon) + \
                            query_suggest_routes_p4
     
-    
-    itns_pattern_codes = []
     itns = []
     """    
     itns = [
@@ -153,13 +146,9 @@ def gen_suggested_routes_in_codes(from_station_name, to_station_name):
                 leg['1st_route_pattern_id'] = item['route']['patterns'][0]['code']
                 leg['all route_pattern_ids'] = [ d['code']for d in item['route']['patterns'] ]
                 
-                # get the route -> patterns -> code
-                #pattern_codes = [ d['code']for d in item['route']['patterns'] ]
             
             itn.append(leg)
         itns.append(itn)
-               # itn_pattern_codes.append(pattern_codes)
-        #itns_pattern_codes.append(itn_pattern_codes)
     
     return itns
 
