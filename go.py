@@ -32,15 +32,37 @@ def emoji():
 		for line in emojifile:
 			splitLine = line.split(')')
 			emoji = splitLine[0].split('(')
-			emojiBase[counter] = emoji[1].strip()
+			emojiBase.append( emoji[1].strip())
 			print('{}, {}'.format(counter, emojiBase[counter]))
 			counter = counter + 1
 
-def convertToBase(number, base):
+def convertToBase(number, base=1000):
 	if number < base:
 		return emojiBase[number]
 	else:
 		return convertToBase(number//base, base) + emojiBase[number%base]
+
+def deemoji(emojistring):
+	result = 0
+	for emoji in emojistring:
+		result *= 1000
+		result += emojiBase.index(emoji)
+	return result
+
+def sumemoji(one, two):
+	return convertToBase(deemoji(one) + deemoji(two))
+
+def modemoji(one, two):
+	return convertToBase(deemoji(one) % deemoji(two))
+
+def divemoji(one, two):
+	return convertToBase(int(deemoji(one) / deemoji(two)))
+
+def mulemoji(one, two):
+	return convertToBase(deemoji(one) * deemoji(two))
+
+def subemoji(one, two):
+	return convertToBase(deemoji(one) - deemoji(two))
 
 
 def run_query(query):
@@ -155,7 +177,7 @@ def gen_suggested_routes_in_codes(from_station_name, to_station_name):
 
 hslidToStopObject={}
 nameToPrime={}
-emojiBase = {}
+emojiBase = []
 
 emoji()
 
@@ -198,15 +220,23 @@ def getl(code):
         linetext += stop['name'] + "(" + str(nameToPrime[stop['name']]) +") -> "
     return lineno
 
-def planRoute(from_station_name, to_station_name):
+
+dec = 'dec'
+emoji = 'emoji'
+
+def planRoute(from_station_name, to_station_name, mode=dec):
 	route = gen_suggested_routes_in_codes(from_station_name, to_station_name)[0]
 	for step in route:
 		if step['mode'] == 'WALK':
 			continue
 		print('\n')
 		busline = getl(step['1st_route_pattern_id'])
+		destination = nameToPrime[step['to']]
+		if mode==emoji:
+			busline = convertToBase(busline)
+			destination = convertToBase(destination)
 		print (f"take the {step['mode']} {busline}")
-		print(f"to {nameToPrime[step['to']]} aka {step['to']}")
+		print(f"to {destination} aka {step['to']}")
 		# print (step)
 
 def makeLine(length):
@@ -226,11 +256,5 @@ def makeLine(length):
 #     getl(result[0][0])
 
 # planRoute('city center', 'Vanhan-Mankkaan tie 35')
-planRoute('city center', 'heinjoenpolku 2')
+#planRoute('city center', 'heinjoenpolku 2')
 # route = gen_suggested_routes_in_codes('city center', 'Vanhan-Mankkaan tie 35')
-
-#print("550 " + str(getLine(550)))
-#print(convertToBase(51759296941079414333315711604049960300290821256010136817594556243115323785701046136602111554394459108531449692330382516858938228969514590993, len(emojiBase)))
-#print("111" + str(getLine(111)))
-#print(convertToBase(40402479324809814417940006512152773163674662445655354921061559291138206891449781840193296159270221602850595043902667142508140557802807074797133339127220727495353426164145036373, len(emojiBase)))
-
