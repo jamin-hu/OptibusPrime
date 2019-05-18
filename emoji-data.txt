@@ -1,72 +1,27 @@
 231A ;	emoji ;	L1 ;	none ;	j	# V1.1 (⌚) WATCH
+1F3B6 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎶) MULTIPLE MUSICAL NOTES
 231B ;	emoji ;	L1 ;	none ;	j	# V1.1 (⌛) HOURGLASS
 2328 ;	text ;	L2 ;	none ;	x	# V1.1 (⌨) KEYBOARD
-23CF ;	text ;	L2 ;	none ;	x	# V4.0 (⏏) EJECT SYMBOL
 23F0 ;	emoji ;	L1 ;	none ;	j	# V6.0 (⏰) ALARM CLOCK
 23F1 ;	text ;	L2 ;	none ;	x	# V6.0 (⏱) STOPWATCH
 23F2 ;	text ;	L2 ;	none ;	x	# V6.0 (⏲) TIMER CLOCK
 23F3 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (⏳) HOURGLASS WITH FLOWING SAND
-24C2 ;	text ;	L1 ;	none ;	j	# V1.1 (Ⓜ) CIRCLED LATIN CAPITAL LETTER M
-25AA ;	text ;	L1 ;	none ;	j w	# V1.1 (▪) BLACK SMALL SQUARE
-25AB ;	text ;	L1 ;	none ;	j	# V1.1 (▫) WHITE SMALL SQUARE
-25B6 ;	text ;	L1 ;	none ;	a j w	# V1.1 (▶) BLACK RIGHT-POINTING TRIANGLE
-25C0 ;	text ;	L1 ;	none ;	a j w	# V1.1 (◀) BLACK LEFT-POINTING TRIANGLE
-25FB ;	text ;	L1 ;	none ;	j	# V3.2 (◻) WHITE MEDIUM SQUARE
-25FC ;	text ;	L1 ;	none ;	j w	# V3.2 (◼) BLACK MEDIUM SQUARE
-25FD ;	emoji ;	L1 ;	none ;	j	# V3.2 (◽) WHITE MEDIUM SMALL SQUARE
-25FE ;	emoji ;	L1 ;	none ;	j w	# V3.2 (◾) BLACK MEDIUM SMALL SQUARE
-2600 ;	text ;	L1 ;	none ;	a j	# V1.1 (☀) BLACK SUN WITH RAYS
-2601 ;	text ;	L1 ;	none ;	a j w	# V1.1 (☁) CLOUD
-2602 ;	text ;	L2 ;	none ;	a	# V1.1 (☂) UMBRELLA
-2603 ;	text ;	L2 ;	none ;	a	# V1.1 (☃) SNOWMAN
 2604 ;	text ;	L2 ;	none ;	x	# V1.1 (☄) COMET
-260E ;	text ;	L1 ;	none ;	z a j	# V1.1 (☎) BLACK TELEPHONE
-2611 ;	text ;	L1 ;	none ;	j w	# V1.1 (☑) BALLOT BOX WITH CHECK
 2614 ;	emoji ;	L1 ;	none ;	a j	# V4.0 (☔) UMBRELLA WITH RAIN DROPS
 2615 ;	emoji ;	L1 ;	none ;	j	# V4.0 (☕) HOT BEVERAGE
 2618 ;	text ;	L2 ;	none ;	x	# V4.1 (☘) SHAMROCK
-261D ;	text ;	L1 ;	secondary ;	j w	# V1.1 (☝) WHITE UP POINTING INDEX
 2620 ;	text ;	L2 ;	none ;	x	# V1.1 (☠) SKULL AND CROSSBONES
-2622 ;	text ;	L2 ;	none ;	x	# V1.1 (☢) RADIOACTIVE SIGN
-2623 ;	text ;	L2 ;	none ;	x	# V1.1 (☣) BIOHAZARD SIGN
-2626 ;	text ;	L2 ;	none ;	x	# V1.1 (☦) ORTHODOX CROSS
-262A ;	text ;	L2 ;	none ;	w	# V1.1 (☪) STAR AND CRESCENT
-262E ;	text ;	L2 ;	none ;	x	# V1.1 (☮) PEACE SYMBOL
-262F ;	text ;	L2 ;	none ;	w	# V1.1 (☯) YIN YANG
-2638 ;	text ;	L2 ;	none ;	w	# V1.1 (☸) WHEEL OF DHARMA
-2639 ;	text ;	L2 ;	secondary ;	w	# V1.1 (☹) WHITE FROWNING FACE
-263A ;	text ;	L1 ;	secondary ;	j w	# V1.1 (☺) WHITE SMILING FACE
-2648 ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♈) ARIES
-2649 ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♉) TAURUS
-264A ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♊) GEMINI
-264B ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♋) CANCER
-264C ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♌) LEO
-264D ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♍) VIRGO
-264E ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♎) LIBRA
-264F ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♏) SCORPIUS
-2650 ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♐) SAGITTARIUS
-2651 ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♑) CAPRICORN
-2652 ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♒) AQUARIUS
-2653 ;	emoji ;	L1 ;	none ;	j w	# V1.1 (♓) PISCES
 2660 ;	text ;	L1 ;	none ;	z a j	# V1.1 (♠) BLACK SPADE SUIT
 2663 ;	text ;	L1 ;	none ;	z a j	# V1.1 (♣) BLACK CLUB SUIT
 2665 ;	text ;	L1 ;	none ;	z a j	# V1.1 (♥) BLACK HEART SUIT
 2666 ;	text ;	L1 ;	none ;	z a j	# V1.1 (♦) BLACK DIAMOND SUIT
-2668 ;	text ;	L1 ;	none ;	a j	# V1.1 (♨) HOT SPRINGS
-267B ;	text ;	L1 ;	none ;	j	# V3.2 (♻) BLACK UNIVERSAL RECYCLING SYMBOL
-267F ;	emoji ;	L1 ;	none ;	j w	# V4.1 (♿) WHEELCHAIR SYMBOL
 2692 ;	text ;	L2 ;	none ;	x	# V4.1 (⚒) HAMMER AND PICK
 2693 ;	emoji ;	L1 ;	none ;	a j	# V4.1 (⚓) ANCHOR
 2694 ;	text ;	L2 ;	none ;	x	# V4.1 (⚔) CROSSED SWORDS
 2696 ;	text ;	L2 ;	none ;	x	# V4.1 (⚖) SCALES
 2697 ;	text ;	L2 ;	none ;	x	# V4.1 (⚗) ALEMBIC
 2699 ;	text ;	L2 ;	none ;	x	# V4.1 (⚙) GEAR
-269B ;	text ;	L2 ;	none ;	x	# V4.1 (⚛) ATOM SYMBOL
-269C ;	text ;	L2 ;	none ;	x	# V4.1 (⚜) FLEUR-DE-LIS
-26A0 ;	text ;	L1 ;	none ;	j	# V4.0 (⚠) WARNING SIGN
-26A1 ;	emoji ;	L1 ;	none ;	a j	# V4.0 (⚡) HIGH VOLTAGE SIGN
-26AA ;	emoji ;	L1 ;	none ;	j	# V4.1 (⚪) MEDIUM WHITE CIRCLE
-26AB ;	emoji ;	L1 ;	none ;	j w	# V4.1 (⚫) MEDIUM BLACK CIRCLE
+1F68C ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚌) BUS
 26B0 ;	text ;	L2 ;	none ;	x	# V4.1 (⚰) COFFIN
 26B1 ;	text ;	L2 ;	none ;	x	# V4.1 (⚱) FUNERAL URN
 26BD ;	emoji ;	L1 ;	none ;	j	# V5.2 (⚽) SOCCER BALL
@@ -74,12 +29,8 @@
 26C4 ;	emoji ;	L1 ;	none ;	a j	# V5.2 (⛄) SNOWMAN WITHOUT SNOW
 26C5 ;	emoji ;	L1 ;	none ;	a j	# V5.2 (⛅) SUN BEHIND CLOUD
 26C8 ;	text ;	L2 ;	none ;	a	# V5.2 (⛈) THUNDER CLOUD AND RAIN
-26CF ;	text ;	L2 ;	none ;	a	# V5.2 (⛏) PICK
-26D1 ;	text ;	L2 ;	none ;	a	# V5.2 (⛑) HELMET WITH WHITE CROSS
-26D3 ;	text ;	L2 ;	none ;	a	# V5.2 (⛓) CHAINS
-26D4 ;	emoji ;	L1 ;	none ;	a j	# V5.2 (⛔) NO ENTRY
-26E9 ;	text ;	L2 ;	none ;	a	# V5.2 (⛩) SHINTO SHRINE
 26EA ;	emoji ;	L1 ;	none ;	a j	# V5.2 (⛪) CHURCH
+1F1EB 1F1EE ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇫🇮) flag for Finland
 26F0 ;	text ;	L2 ;	none ;	a	# V5.2 (⛰) MOUNTAIN
 26F1 ;	text ;	L2 ;	none ;	a	# V5.2 (⛱) UMBRELLA ON GROUND
 26F2 ;	emoji ;	L1 ;	none ;	a j	# V5.2 (⛲) FOUNTAIN
@@ -91,59 +42,10 @@
 26F9 ;	text ;	L2 ;	none ;	a	# V5.2 (⛹) PERSON WITH BALL
 26FA ;	emoji ;	L1 ;	none ;	a j	# V5.2 (⛺) TENT
 26FD ;	emoji ;	L1 ;	none ;	a j	# V5.2 (⛽) FUEL PUMP
-2702 ;	text ;	L1 ;	none ;	z j w	# V1.1 (✂) BLACK SCISSORS
-2705 ;	emoji ;	L1 ;	none ;	j	# V6.0 (✅) WHITE HEAVY CHECK MARK
-2708 ;	text ;	L1 ;	none ;	z a j w	# V1.1 (✈) AIRPLANE
-2709 ;	text ;	L1 ;	none ;	z j	# V1.1 (✉) ENVELOPE
 270A ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (✊) RAISED FIST
 270B ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (✋) RAISED HAND
-270C ;	text ;	L1 ;	secondary ;	z j w	# V1.1 (✌) VICTORY HAND
-270D ;	text ;	L2 ;	secondary ;	z w	# V1.1 (✍) WRITING HAND
-270F ;	text ;	L1 ;	none ;	z j	# V1.1 (✏) PENCIL
-2712 ;	text ;	L1 ;	none ;	z j	# V1.1 (✒) BLACK NIB
-2714 ;	text ;	L1 ;	none ;	z j w	# V1.1 (✔) HEAVY CHECK MARK
-2716 ;	text ;	L1 ;	none ;	z j	# V1.1 (✖) HEAVY MULTIPLICATION X
-271D ;	text ;	L2 ;	none ;	w	# V1.1 (✝) LATIN CROSS
-2721 ;	text ;	L2 ;	none ;	w	# V1.1 (✡) STAR OF DAVID
 2728 ;	emoji ;	L1 ;	none ;	j	# V6.0 (✨) SPARKLES
-2733 ;	text ;	L1 ;	none ;	z j	# V1.1 (✳) EIGHT SPOKED ASTERISK
-2734 ;	text ;	L1 ;	none ;	z j	# V1.1 (✴) EIGHT POINTED BLACK STAR
-2744 ;	text ;	L1 ;	none ;	z j w	# V1.1 (❄) SNOWFLAKE
-2747 ;	text ;	L1 ;	none ;	z j	# V1.1 (❇) SPARKLE
-274C ;	emoji ;	L1 ;	none ;	j	# V6.0 (❌) CROSS MARK
-274E ;	emoji ;	L1 ;	none ;	j	# V6.0 (❎) NEGATIVE SQUARED CROSS MARK
-2753 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (❓) BLACK QUESTION MARK ORNAMENT
-2754 ;	emoji ;	L1 ;	none ;	j	# V6.0 (❔) WHITE QUESTION MARK ORNAMENT
-2755 ;	emoji ;	L1 ;	none ;	j	# V6.0 (❕) WHITE EXCLAMATION MARK ORNAMENT
-2757 ;	emoji ;	L1 ;	none ;	j	# V5.2 (❗) HEAVY EXCLAMATION MARK SYMBOL
-2763 ;	text ;	L2 ;	none ;	z	# V1.1 (❣) HEAVY HEART EXCLAMATION MARK ORNAMENT
-2764 ;	text ;	L1 ;	none ;	z j	# V1.1 (❤) HEAVY BLACK HEART
-2795 ;	emoji ;	L1 ;	none ;	j	# V6.0 (➕) HEAVY PLUS SIGN
-2796 ;	emoji ;	L1 ;	none ;	j	# V6.0 (➖) HEAVY MINUS SIGN
-2797 ;	emoji ;	L1 ;	none ;	j	# V6.0 (➗) HEAVY DIVISION SIGN
-27A1 ;	text ;	L1 ;	none ;	z a j	# V1.1 (➡) BLACK RIGHTWARDS ARROW
-27B0 ;	emoji ;	L1 ;	none ;	j	# V6.0 (➰) CURLY LOOP
-27BF ;	emoji ;	L1 ;	none ;	x	# V6.0 (➿) DOUBLE CURLY LOOP
-2934 ;	text ;	L1 ;	none ;	j	# V3.2 (⤴) ARROW POINTING RIGHTWARDS THEN CURVING UPWARDS
-2935 ;	text ;	L1 ;	none ;	j	# V3.2 (⤵) ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS
-2B05 ;	text ;	L1 ;	none ;	a j	# V4.0 (⬅) LEFTWARDS BLACK ARROW
-2B06 ;	text ;	L1 ;	none ;	a j	# V4.0 (⬆) UPWARDS BLACK ARROW
-2B07 ;	text ;	L1 ;	none ;	a j	# V4.0 (⬇) DOWNWARDS BLACK ARROW
-2B1B ;	emoji ;	L1 ;	none ;	a j w	# V5.1 (⬛) BLACK LARGE SQUARE
-2B1C ;	emoji ;	L1 ;	none ;	j w	# V5.1 (⬜) WHITE LARGE SQUARE
 2B50 ;	emoji ;	L1 ;	none ;	j	# V5.1 (⭐) WHITE MEDIUM STAR
-2B55 ;	emoji ;	L1 ;	none ;	j	# V5.2 (⭕) HEAVY LARGE CIRCLE
-3030 ;	text ;	L1 ;	none ;	j	# V1.1 (〰) WAVY DASH
-303D ;	text ;	L1 ;	none ;	j	# V3.2 (〽) PART ALTERNATION MARK
-3297 ;	text ;	L1 ;	none ;	j	# V1.1 (㊗) CIRCLED IDEOGRAPH CONGRATULATION
-3299 ;	text ;	L1 ;	none ;	a j	# V1.1 (㊙) CIRCLED IDEOGRAPH SECRET
-1F004 ;	emoji ;	L1 ;	none ;	j	# V5.1 (🀄) MAHJONG TILE RED DRAGON
-1F0CF ;	emoji ;	L1 ;	none ;	j	# V6.0 (🃏) PLAYING CARD BLACK JOKER
-1F170 ;	text ;	L1 ;	none ;	j	# V6.0 (🅰) NEGATIVE SQUARED LATIN CAPITAL LETTER A
-1F171 ;	text ;	L1 ;	none ;	j	# V6.0 (🅱) NEGATIVE SQUARED LATIN CAPITAL LETTER B
-1F17E ;	text ;	L1 ;	none ;	j	# V6.0 (🅾) NEGATIVE SQUARED LATIN CAPITAL LETTER O
-1F17F ;	text ;	L1 ;	none ;	a j	# V5.2 (🅿) NEGATIVE SQUARED LATIN CAPITAL LETTER P
-1F300 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🌀) CYCLONE
 1F301 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🌁) FOGGY
 1F302 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🌂) CLOSED UMBRELLA
 1F303 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🌃) NIGHT WITH STARS
@@ -288,7 +190,6 @@
 1F390 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎐) WIND CHIME
 1F391 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎑) MOON VIEWING CEREMONY
 1F392 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎒) SCHOOL SATCHEL
-1F393 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🎓) GRADUATION CAP
 1F396 ;	text ;	L2 ;	none ;	w	# V7.0 (🎖) MILITARY MEDAL
 1F397 ;	text ;	L2 ;	none ;	w	# V7.0 (🎗) REMINDER RIBBON
 1F399 ;	text ;	L2 ;	none ;	w	# V7.0 (🎙) STUDIO MICROPHONE
@@ -318,7 +219,6 @@
 1F3B3 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎳) BOWLING
 1F3B4 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎴) FLOWER PLAYING CARDS
 1F3B5 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎵) MUSICAL NOTE
-1F3B6 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎶) MULTIPLE MUSICAL NOTES
 1F3B7 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎷) SAXOPHONE
 1F3B8 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎸) GUITAR
 1F3B9 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🎹) MUSICAL KEYBOARD
@@ -331,7 +231,6 @@
 1F3C0 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🏀) BASKETBALL AND HOOP
 1F3C1 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🏁) CHEQUERED FLAG
 1F3C2 ;	emoji ;	L1 ;	secondary ;	j w	# V6.0 (🏂) SNOWBOARDER
-1F3C3 ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (🏃) RUNNER
 1F3C4 ;	emoji ;	L1 ;	secondary ;	j w	# V6.0 (🏄) SURFER
 1F3C5 ;	emoji ;	L2 ;	none ;	x	# V7.0 (🏅) SPORTS MEDAL
 1F3C6 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🏆) TROPHY
@@ -384,11 +283,6 @@
 1F3F8 ;	emoji ;	L2 ;	none ;	x	# V8.0 (🏸) BADMINTON RACQUET AND SHUTTLECOCK
 1F3F9 ;	emoji ;	L2 ;	none ;	x	# V8.0 (🏹) BOW AND ARROW
 1F3FA ;	emoji ;	L2 ;	none ;	x	# V8.0 (🏺) AMPHORA
-1F3FB ;	emoji ;	L2 ;	modifier ;	x	# V8.0 (🏻) EMOJI MODIFIER FITZPATRICK TYPE-1-2
-1F3FC ;	emoji ;	L2 ;	modifier ;	x	# V8.0 (🏼) EMOJI MODIFIER FITZPATRICK TYPE-3
-1F3FD ;	emoji ;	L2 ;	modifier ;	x	# V8.0 (🏽) EMOJI MODIFIER FITZPATRICK TYPE-4
-1F3FE ;	emoji ;	L2 ;	modifier ;	x	# V8.0 (🏾) EMOJI MODIFIER FITZPATRICK TYPE-5
-1F3FF ;	emoji ;	L2 ;	modifier ;	x	# V8.0 (🏿) EMOJI MODIFIER FITZPATRICK TYPE-6
 1F400 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🐀) RAT
 1F401 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🐁) MOUSE
 1F402 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🐂) OX
@@ -489,8 +383,6 @@
 1F461 ;	emoji ;	L1 ;	none ;	j	# V6.0 (👡) WOMANS SANDAL
 1F462 ;	emoji ;	L1 ;	none ;	j	# V6.0 (👢) WOMANS BOOTS
 1F463 ;	emoji ;	L1 ;	none ;	j	# V6.0 (👣) FOOTPRINTS
-1F464 ;	emoji ;	L1 ;	none ;	j	# V6.0 (👤) BUST IN SILHOUETTE
-1F465 ;	emoji ;	L1 ;	none ;	x	# V6.0 (👥) BUSTS IN SILHOUETTE
 1F466 ;	emoji ;	L1 ;	primary ;	j	# V6.0 (👦) BOY
 1F467 ;	emoji ;	L1 ;	primary ;	j	# V6.0 (👧) GIRL
 1F468 ;	emoji ;	L1 ;	primary ;	j	# V6.0 (👨) MAN
@@ -548,7 +440,6 @@
 1F49C ;	emoji ;	L1 ;	none ;	j	# V6.0 (💜) PURPLE HEART
 1F49D ;	emoji ;	L1 ;	none ;	j	# V6.0 (💝) HEART WITH RIBBON
 1F49E ;	emoji ;	L1 ;	none ;	j	# V6.0 (💞) REVOLVING HEARTS
-1F49F ;	emoji ;	L1 ;	none ;	j	# V6.0 (💟) HEART DECORATION
 1F4A0 ;	emoji ;	L1 ;	none ;	j	# V6.0 (💠) DIAMOND SHAPE WITH A DOT INSIDE
 1F4A1 ;	emoji ;	L1 ;	none ;	j	# V6.0 (💡) ELECTRIC LIGHT BULB
 1F4A2 ;	emoji ;	L1 ;	none ;	j	# V6.0 (💢) ANGER SYMBOL
@@ -566,7 +457,6 @@
 1F4AE ;	emoji ;	L1 ;	none ;	j	# V6.0 (💮) WHITE FLOWER
 1F4AF ;	emoji ;	L1 ;	none ;	j	# V6.0 (💯) HUNDRED POINTS SYMBOL
 1F4B0 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (💰) MONEY BAG
-1F4B1 ;	emoji ;	L1 ;	none ;	j	# V6.0 (💱) CURRENCY EXCHANGE
 1F4B2 ;	emoji ;	L1 ;	none ;	j	# V6.0 (💲) HEAVY DOLLAR SIGN
 1F4B3 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (💳) CREDIT CARD
 1F4B4 ;	emoji ;	L1 ;	none ;	j	# V6.0 (💴) BANKNOTE WITH YEN SIGN
@@ -579,14 +469,12 @@
 1F4BB ;	emoji ;	L1 ;	none ;	j w	# V6.0 (💻) PERSONAL COMPUTER
 1F4BC ;	emoji ;	L1 ;	none ;	j	# V6.0 (💼) BRIEFCASE
 1F4BD ;	emoji ;	L1 ;	none ;	j	# V6.0 (💽) MINIDISC
+1F3C3 ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (🏃) RUNNER
 1F4BE ;	emoji ;	L1 ;	none ;	j	# V6.0 (💾) FLOPPY DISK
 1F4BF ;	emoji ;	L1 ;	none ;	j w	# V6.0 (💿) OPTICAL DISC
 1F4C0 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📀) DVD
 1F4C1 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📁) FILE FOLDER
-1F4C2 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📂) OPEN FILE FOLDER
 1F4C3 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📃) PAGE WITH CURL
-1F4C4 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📄) PAGE FACING UP
-1F4C5 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📅) CALENDAR
 1F4C6 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📆) TEAR-OFF CALENDAR
 1F4C7 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📇) CARD INDEX
 1F4C8 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📈) CHART WITH UPWARDS TREND
@@ -600,13 +488,6 @@
 1F4D0 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📐) TRIANGULAR RULER
 1F4D1 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📑) BOOKMARK TABS
 1F4D2 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📒) LEDGER
-1F4D3 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📓) NOTEBOOK
-1F4D4 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📔) NOTEBOOK WITH DECORATIVE COVER
-1F4D5 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📕) CLOSED BOOK
-1F4D6 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📖) OPEN BOOK
-1F4D7 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📗) GREEN BOOK
-1F4D8 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📘) BLUE BOOK
-1F4D9 ;	emoji ;	L1 ;	none ;	j	# V6.0 (📙) ORANGE BOOK
 1F4DA ;	emoji ;	L1 ;	none ;	j w	# V6.0 (📚) BOOKS
 1F4DB ;	emoji ;	L1 ;	none ;	j	# V6.0 (📛) NAME BADGE
 1F4DC ;	emoji ;	L1 ;	none ;	j	# V6.0 (📜) SCROLL
@@ -640,12 +521,9 @@
 1F4FC ;	emoji ;	L1 ;	none ;	j	# V6.0 (📼) VIDEOCASSETTE
 1F4FD ;	text ;	L2 ;	none ;	w	# V7.0 (📽) FILM PROJECTOR
 1F4FF ;	emoji ;	L2 ;	none ;	x	# V8.0 (📿) PRAYER BEADS
-1F505 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🔅) LOW BRIGHTNESS SYMBOL
 1F506 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🔆) HIGH BRIGHTNESS SYMBOL
 1F507 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🔇) SPEAKER WITH CANCELLATION STROKE
 1F508 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🔈) SPEAKER
-1F509 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🔉) SPEAKER WITH ONE SOUND WAVE
-1F50A ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔊) SPEAKER WITH THREE SOUND WAVES
 1F50B ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔋) BATTERY
 1F50C ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔌) ELECTRIC PLUG
 1F50D ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🔍) LEFT-POINTING MAGNIFYING GLASS
@@ -654,17 +532,11 @@
 1F510 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔐) CLOSED LOCK WITH KEY
 1F511 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔑) KEY
 1F512 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🔒) LOCK
-1F513 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🔓) OPEN LOCK
 1F514 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔔) BELL
 1F515 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🔕) BELL WITH CANCELLATION STROKE
 1F516 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔖) BOOKMARK
 1F517 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔗) LINK SYMBOL
 1F518 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔘) RADIO BUTTON
-1F519 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔙) BACK WITH LEFTWARDS ARROW ABOVE
-1F51A ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔚) END WITH LEFTWARDS ARROW ABOVE
-1F51B ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔛) ON WITH EXCLAMATION MARK WITH LEFT RIGHT ARROW ABOVE
-1F51C ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔜) SOON WITH RIGHTWARDS ARROW ABOVE
-1F51D ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔝) TOP WITH UPWARDS ARROW ABOVE
 1F51E ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔞) NO ONE UNDER EIGHTEEN SYMBOL
 1F525 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔥) FIRE
 1F526 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔦) ELECTRIC TORCH
@@ -676,51 +548,13 @@
 1F52C ;	emoji ;	L1 ;	none ;	x	# V6.0 (🔬) MICROSCOPE
 1F52D ;	emoji ;	L1 ;	none ;	x	# V6.0 (🔭) TELESCOPE
 1F52E ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔮) CRYSTAL BALL
-1F52F ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔯) SIX POINTED STAR WITH MIDDLE DOT
 1F530 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔰) JAPANESE SYMBOL FOR BEGINNER
 1F531 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔱) TRIDENT EMBLEM
-1F532 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔲) BLACK SQUARE BUTTON
-1F533 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔳) WHITE SQUARE BUTTON
-1F534 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔴) LARGE RED CIRCLE
-1F535 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔵) LARGE BLUE CIRCLE
-1F536 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔶) LARGE ORANGE DIAMOND
-1F537 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔷) LARGE BLUE DIAMOND
-1F538 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔸) SMALL ORANGE DIAMOND
-1F539 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔹) SMALL BLUE DIAMOND
-1F53A ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔺) UP-POINTING RED TRIANGLE
-1F53B ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔻) DOWN-POINTING RED TRIANGLE
-1F53C ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔼) UP-POINTING SMALL RED TRIANGLE
-1F53D ;	emoji ;	L1 ;	none ;	j	# V6.0 (🔽) DOWN-POINTING SMALL RED TRIANGLE
-1F549 ;	text ;	L2 ;	none ;	w	# V7.0 (🕉) OM SYMBOL
 1F54A ;	text ;	L2 ;	none ;	w	# V7.0 (🕊) DOVE OF PEACE
 1F54B ;	emoji ;	L2 ;	none ;	x	# V8.0 (🕋) KAABA
 1F54C ;	emoji ;	L2 ;	none ;	x	# V8.0 (🕌) MOSQUE
 1F54D ;	emoji ;	L2 ;	none ;	x	# V8.0 (🕍) SYNAGOGUE
-1F54E ;	emoji ;	L2 ;	none ;	x	# V8.0 (🕎) MENORAH WITH NINE BRANCHES
 1F550 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕐) CLOCK FACE ONE OCLOCK
-1F551 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕑) CLOCK FACE TWO OCLOCK
-1F552 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕒) CLOCK FACE THREE OCLOCK
-1F553 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕓) CLOCK FACE FOUR OCLOCK
-1F554 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕔) CLOCK FACE FIVE OCLOCK
-1F555 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕕) CLOCK FACE SIX OCLOCK
-1F556 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕖) CLOCK FACE SEVEN OCLOCK
-1F557 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕗) CLOCK FACE EIGHT OCLOCK
-1F558 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕘) CLOCK FACE NINE OCLOCK
-1F559 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕙) CLOCK FACE TEN OCLOCK
-1F55A ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕚) CLOCK FACE ELEVEN OCLOCK
-1F55B ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🕛) CLOCK FACE TWELVE OCLOCK
-1F55C ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕜) CLOCK FACE ONE-THIRTY
-1F55D ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕝) CLOCK FACE TWO-THIRTY
-1F55E ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕞) CLOCK FACE THREE-THIRTY
-1F55F ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕟) CLOCK FACE FOUR-THIRTY
-1F560 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕠) CLOCK FACE FIVE-THIRTY
-1F561 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕡) CLOCK FACE SIX-THIRTY
-1F562 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕢) CLOCK FACE SEVEN-THIRTY
-1F563 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕣) CLOCK FACE EIGHT-THIRTY
-1F564 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕤) CLOCK FACE NINE-THIRTY
-1F565 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕥) CLOCK FACE TEN-THIRTY
-1F566 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕦) CLOCK FACE ELEVEN-THIRTY
-1F567 ;	emoji ;	L1 ;	none ;	w	# V6.0 (🕧) CLOCK FACE TWELVE-THIRTY
 1F56F ;	text ;	L2 ;	none ;	w	# V7.0 (🕯) CANDLE
 1F570 ;	text ;	L2 ;	none ;	w	# V7.0 (🕰) MANTELPIECE CLOCK
 1F573 ;	text ;	L2 ;	none ;	w	# V7.0 (🕳) HOLE
@@ -841,7 +675,7 @@
 1F64C ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (🙌) PERSON RAISING BOTH HANDS IN CELEBRATION
 1F64D ;	emoji ;	L1 ;	primary ;	j	# V6.0 (🙍) PERSON FROWNING
 1F64E ;	emoji ;	L1 ;	primary ;	j	# V6.0 (🙎) PERSON WITH POUTING FACE
-1F64F ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (🙏) PERSON WITH FOLDED HANDS
+1F687 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🚇) METRO
 1F680 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚀) ROCKET
 1F681 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚁) HELICOPTER
 1F682 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚂) STEAM LOCOMOTIVE
@@ -849,12 +683,12 @@
 1F684 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚄) HIGH-SPEED TRAIN
 1F685 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚅) HIGH-SPEED TRAIN WITH BULLET NOSE
 1F686 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚆) TRAIN
-1F687 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🚇) METRO
+1F64F ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (🙏) PERSON WITH FOLDED HANDS
 1F688 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚈) LIGHT RAIL
 1F689 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚉) STATION
 1F68A ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚊) TRAM
 1F68B ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚋) TRAM CAR
-1F68C ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚌) BUS
+26A1 ;	emoji ;	L1 ;	none ;	a j	# V4.0 (⚡) HIGH VOLTAGE SIGN
 1F68D ;	emoji ;	L1 ;	none ;	w	# V6.0 (🚍) ONCOMING BUS
 1F68E ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚎) TROLLEYBUS
 1F68F ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚏) BUS STOP
@@ -887,37 +721,20 @@
 1F6AA ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚪) DOOR
 1F6AB ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚫) NO ENTRY SIGN
 1F6AC ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚬) SMOKING SYMBOL
-1F6AD ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🚭) NO SMOKING SYMBOL
-1F6AE ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚮) PUT LITTER IN ITS PLACE SYMBOL
-1F6AF ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚯) DO NOT LITTER SYMBOL
-1F6B0 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚰) POTABLE WATER SYMBOL
-1F6B1 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚱) NON-POTABLE WATER SYMBOL
 1F6B2 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🚲) BICYCLE
-1F6B3 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚳) NO BICYCLES
 1F6B4 ;	emoji ;	L1 ;	secondary ;	x	# V6.0 (🚴) BICYCLIST
 1F6B5 ;	emoji ;	L1 ;	secondary ;	x	# V6.0 (🚵) MOUNTAIN BICYCLIST
 1F6B6 ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (🚶) PEDESTRIAN
-1F6B7 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚷) NO PEDESTRIANS
-1F6B8 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚸) CHILDREN CROSSING
-1F6B9 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🚹) MENS SYMBOL
-1F6BA ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🚺) WOMENS SYMBOL
-1F6BB ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚻) RESTROOM
-1F6BC ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🚼) BABY SYMBOL
 1F6BD ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚽) TOILET
 1F6BE ;	emoji ;	L1 ;	none ;	j	# V6.0 (🚾) WATER CLOSET
 1F6BF ;	emoji ;	L1 ;	none ;	x	# V6.0 (🚿) SHOWER
 1F6C0 ;	emoji ;	L1 ;	secondary ;	j	# V6.0 (🛀) BATH
 1F6C1 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🛁) BATHTUB
-1F6C2 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🛂) PASSPORT CONTROL
-1F6C3 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🛃) CUSTOMS
-1F6C4 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🛄) BAGGAGE CLAIM
-1F6C5 ;	emoji ;	L1 ;	none ;	x	# V6.0 (🛅) LEFT LUGGAGE
 1F6CB ;	text ;	L2 ;	none ;	w	# V7.0 (🛋) COUCH AND LAMP
 1F6CC ;	emoji ;	L2 ;	none ;	x	# V7.0 (🛌) SLEEPING ACCOMMODATION
 1F6CD ;	text ;	L2 ;	none ;	w	# V7.0 (🛍) SHOPPING BAGS
 1F6CE ;	text ;	L2 ;	none ;	w	# V7.0 (🛎) BELLHOP BELL
 1F6CF ;	text ;	L2 ;	none ;	w	# V7.0 (🛏) BED
-1F6D0 ;	emoji ;	L2 ;	none ;	x	# V8.0 (🛐) PLACE OF WORSHIP
 1F6E0 ;	text ;	L2 ;	none ;	w	# V7.0 (🛠) HAMMER AND WRENCH
 1F6E1 ;	text ;	L2 ;	none ;	w	# V7.0 (🛡) SHIELD
 1F6E2 ;	text ;	L2 ;	none ;	w	# V7.0 (🛢) OIL DRUM
@@ -944,47 +761,26 @@
 1F983 ;	emoji ;	L2 ;	none ;	x	# V8.0 (🦃) TURKEY
 1F984 ;	emoji ;	L2 ;	none ;	x	# V8.0 (🦄) UNICORN FACE
 1F9C0 ;	emoji ;	L2 ;	none ;	x	# V8.0 (🧀) CHEESE WEDGE
-0023 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (#⃣) keycap NUMBER SIGN
-002A 20E3 ;	text ;	L2 ;	none ;	x	# V3.0 (*⃣) keycap ASTERISK
-0030 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (0⃣) keycap DIGIT ZERO
-0031 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (1⃣) keycap DIGIT ONE
-0032 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (2⃣) keycap DIGIT TWO
-0033 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (3⃣) keycap DIGIT THREE
-0034 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (4⃣) keycap DIGIT FOUR
-0035 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (5⃣) keycap DIGIT FIVE
-0036 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (6⃣) keycap DIGIT SIX
-0037 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (7⃣) keycap DIGIT SEVEN
-0038 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (8⃣) keycap DIGIT EIGHT
-0039 20E3 ;	text ;	L1 ;	none ;	j	# V3.0 (9⃣) keycap DIGIT NINE
 1F1E6 1F1E8 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇨) flag for Ascension Island
 1F1E6 1F1E9 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇩) flag for Andorra
 1F1E6 1F1EA ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇪) flag for United Arab Emirates
 1F1E6 1F1EB ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇫) flag for Afghanistan
-1F1E6 1F1EC ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇬) flag for Antigua & Barbuda
-1F1E6 1F1EE ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇮) flag for Anguilla
 1F1E6 1F1F1 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇱) flag for Albania
 1F1E6 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇲) flag for Armenia
 1F1E6 1F1F4 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇴) flag for Angola
-1F1E6 1F1F6 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇶) flag for Antarctica
 1F1E6 1F1F7 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇷) flag for Argentina
+1F393 ;	emoji ;	L1 ;	none ;	j w	# V6.0 (🎓) GRADUATION CAP
 1F1E6 1F1F8 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇸) flag for American Samoa
 1F1E6 1F1F9 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇹) flag for Austria
 1F1E6 1F1FA ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇺) flag for Australia
-1F1E6 1F1FC ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇼) flag for Aruba
 1F1E6 1F1FD ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇽) flag for Åland Islands
 1F1E6 1F1FF ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇦🇿) flag for Azerbaijan
 1F1E7 1F1E6 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇦) flag for Bosnia & Herzegovina
-1F1E7 1F1E7 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇧) flag for Barbados
 1F1E7 1F1E9 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇩) flag for Bangladesh
 1F1E7 1F1EA ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇪) flag for Belgium
-1F1E7 1F1EB ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇫) flag for Burkina Faso
 1F1E7 1F1EC ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇬) flag for Bulgaria
 1F1E7 1F1ED ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇭) flag for Bahrain
-1F1E7 1F1EE ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇮) flag for Burundi
 1F1E7 1F1EF ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇯) flag for Benin
-1F1E7 1F1F1 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇱) flag for St. Barthélemy
-1F1E7 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇲) flag for Bermuda
-1F1E7 1F1F3 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇳) flag for Brunei
 1F1E7 1F1F4 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇴) flag for Bolivia
 1F1E7 1F1F6 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇶) flag for Caribbean Netherlands
 1F1E7 1F1F7 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇷) flag for Brazil
@@ -995,7 +791,6 @@
 1F1E7 1F1FE ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇾) flag for Belarus
 1F1E7 1F1FF ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇧🇿) flag for Belize
 1F1E8 1F1E6 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇨🇦) flag for Canada
-1F1E8 1F1E8 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇨🇨) flag for Cocos Islands
 1F1E8 1F1E9 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇨🇩) flag for Congo - Kinshasa
 1F1E8 1F1EB ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇨🇫) flag for Central African Republic
 1F1E8 1F1EC ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇨🇬) flag for Congo - Brazzaville
@@ -1015,8 +810,6 @@
 1F1E8 1F1FE ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇨🇾) flag for Cyprus
 1F1E8 1F1FF ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇨🇿) flag for Czech Republic
 1F1E9 1F1EA ;	emoji ;	L1 ;	none ;	j	# V6.0 (🇩🇪) flag for Germany
-1F1E9 1F1EC ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇩🇬) flag for Diego Garcia
-1F1E9 1F1EF ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇩🇯) flag for Djibouti
 1F1E9 1F1F0 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇩🇰) flag for Denmark
 1F1E9 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇩🇲) flag for Dominica
 1F1E9 1F1F4 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇩🇴) flag for Dominican Republic
@@ -1031,8 +824,6 @@
 1F1EA 1F1F9 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇪🇹) flag for Ethiopia
 1F1EA 1F1FA ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇪🇺) flag for European Union
 1F1EB 1F1EF ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇫🇯) flag for Fiji
-1F1EB 1F1F0 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇫🇰) flag for Falkland Islands
-1F1EB 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇫🇲) flag for Micronesia
 1F1EB 1F1F4 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇫🇴) flag for Faroe Islands
 1F1EB 1F1F7 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🇫🇷) flag for France
 1F1EC 1F1E6 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇦) flag for Gabon
@@ -1046,7 +837,6 @@
 1F1EC 1F1F1 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇱) flag for Greenland
 1F1EC 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇲) flag for Gambia
 1F1EC 1F1F3 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇳) flag for Guinea
-1F1EC 1F1F5 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇵) flag for Guadeloupe
 1F1EC 1F1F6 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇶) flag for Equatorial Guinea
 1F1EC 1F1F7 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇷) flag for Greece
 1F1EC 1F1F8 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇸) flag for South Georgia & South Sandwich Islands
@@ -1055,7 +845,6 @@
 1F1EC 1F1FC ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇼) flag for Guinea-Bissau
 1F1EC 1F1FE ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇬🇾) flag for Guyana
 1F1ED 1F1F0 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇭🇰) flag for Hong Kong
-1F1ED 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇭🇲) flag for Heard & McDonald Islands
 1F1ED 1F1F3 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇭🇳) flag for Honduras
 1F1ED 1F1F7 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇭🇷) flag for Croatia
 1F1ED 1F1F9 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇭🇹) flag for Haiti
@@ -1064,7 +853,6 @@
 1F1EE 1F1E9 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇮🇩) flag for Indonesia
 1F1EE 1F1EA ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇮🇪) flag for Ireland
 1F1EE 1F1F1 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇮🇱) flag for Israel
-1F1EE 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇮🇲) flag for Isle of Man
 1F1EE 1F1F3 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇮🇳) flag for India
 1F1EE 1F1F4 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇮🇴) flag for British Indian Ocean Territory
 1F1EE 1F1F6 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇮🇶) flag for Iraq
@@ -1077,7 +865,6 @@
 1F1EF 1F1F5 ;	emoji ;	L1 ;	none ;	j	# V6.0 (🇯🇵) flag for Japan
 1F1F0 1F1EA ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇰🇪) flag for Kenya
 1F1F0 1F1EC ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇰🇬) flag for Kyrgyzstan
-1F1F0 1F1ED ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇰🇭) flag for Cambodia
 1F1F0 1F1EE ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇰🇮) flag for Kiribati
 1F1F0 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇰🇲) flag for Comoros
 1F1F0 1F1F3 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇰🇳) flag for St. Kitts & Nevis
@@ -1109,7 +896,6 @@
 1F1F2 1F1F2 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇲🇲) flag for Myanmar
 1F1F2 1F1F3 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇲🇳) flag for Mongolia
 1F1F2 1F1F4 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇲🇴) flag for Macau
-1F1F2 1F1F5 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇲🇵) flag for Northern Mariana Islands
 1F1F2 1F1F6 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇲🇶) flag for Martinique
 1F1F2 1F1F7 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇲🇷) flag for Mauritania
 1F1F2 1F1F8 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇲🇸) flag for Montserrat
@@ -1179,7 +965,6 @@
 1F1F9 1F1E9 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇹🇩) flag for Chad
 1F1F9 1F1EB ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇹🇫) flag for French Southern Territories
 1F1F9 1F1EC ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇹🇬) flag for Togo
-1F1EB 1F1EE ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇫🇮) flag for Finland
 1F1F9 1F1ED ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇹🇭) flag for Thailand
 1F1F9 1F1EF ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇹🇯) flag for Tajikistan
 1F1F9 1F1F0 ;	emoji ;	L2 ;	none ;	x	# V6.0 (🇹🇰) flag for Tokelau
