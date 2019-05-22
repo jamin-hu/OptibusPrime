@@ -30,3 +30,8 @@ We applied our amazing mathematical model to the Helsinki public transport syste
 ![alt text](https://i.imgur.com/xs2a8vx.png)
 
 Now you'll never miss a bus again (if you can divide really quickly...)!
+
+## Further Exploration
+
+1. Why would one need to know where the bus has already been? Exactly! One doesn't! So let's make sure that the bus route number changes and a number that represents only the stops that it will be going to. A dynamic bus number!
+2. Same thing applies inside the bus, with a dynamic bus number, you will always know what your next stops will be! (Not in any specific order though, so the inside number would have to be one stop ahead of the outside)
