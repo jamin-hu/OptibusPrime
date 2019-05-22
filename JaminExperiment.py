@@ -30,7 +30,7 @@ def calcRandAvgRouteProd(totalNumOfStops, numOfStops):
 
     for h in range(10):
         stopPrimes = []
-        stopPrimes = random.sample(totalStopPrimes, k = numOfStops)
+        stopPrimes = random.choices(totalStopPrimes, k = numOfStops)
 
         print("Random sample of StopPrimes = ")
         print(stopPrimes)
@@ -49,8 +49,8 @@ def calcRandAvgRouteProd(totalNumOfStops, numOfStops):
 def getPossibilities(maxNumOfTotalStops):
 
     possibilityMatrix = np.zeros(shape=(maxNumOfTotalStops,maxNumOfTotalStops))
-    for i in range(maxNumOfTotalStops):
-        for j in range(maxNumOfTotalStops):
+    for i in range(0, maxNumOfTotalStops, 10):
+        for j in range(0, maxNumOfTotalStops, 10):
             if i>j:
                 print(i)
                 print(j)
@@ -59,7 +59,7 @@ def getPossibilities(maxNumOfTotalStops):
 
     return possibilityMatrix
 
-possibilityMatrix = getPossibilities(100)
+possibilityMatrix = getPossibilities(1000)
 
 print(possibilityMatrix)
 
